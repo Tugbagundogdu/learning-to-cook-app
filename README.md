@@ -1,232 +1,123 @@
-<h1 align="center">🍽️ Tuğba's Recipe App 🍽️</h1>
+<h1 align="center">🍽️ Tuğba's Learning To Cook App 🍽️</h1>
 
 <p align="center">
-  <strong>A Modern Recipe Discovery Application</strong><br>
-  <em>Developed by Tuğba Gündoğdu</em>
+  <strong>Modern Recipe Discovery Mobile Application</strong><br>
+  <em>Customized & Improved by Tuğba Gündoğdu</em>
 </p>
 
-![Demo App](/mobile/assets/images//screenshot-for-readme.png)
+---
 
-## ✨ Project Highlights
+## 📱 About This Project
 
-- 🔐 **Full Authentication System** - Signup, Login, and 6-Digit Email Verification with Clerk
-- 🍳 **Browse & Discover** - Featured Recipes & Filter by Categories
-- 🔍 **Smart Search** - Find Recipes and View Detailed Cooking Instructions
-- 🎥 **Video Tutorials** - Recipe Pages Include YouTube Video Integration
-- ❤️ **Personal Favorites** - Add Recipes to Favorites and Access Them from Favorites Tab
-- ⚡ **Modern Tech Stack** - React Native + Expo + Express + PostgreSQL
-- 🎨 **Custom Design** - Beautiful UI with Tuğba's Custom Theme
-- 🌈 **Multiple Color Themes** - Includes 9 Color Themes
-- 🆓 **100% Free Tools** - No Paid Services Required
+This project is based on an open-source recipe application and was customized and improved as part of my mobile development portfolio.
+
+My focus was on improving the UI/UX, modernizing the design, and creating a smoother mobile user experience.
 
 ---
 
-## 👩‍💻 About the Developer
+## ✨ Main Features
 
-**Tuğba Gündoğdu** - Full Stack Mobile Developer
-
-This project showcases modern mobile development practices, including authentication, API integration, database management, and beautiful UI/UX design.
+- 🔐 User authentication flow  
+- 🍳 Browse and discover recipes  
+- 🔍 Search functionality  
+- 📄 Detailed recipe pages  
+- ❤️ Favorites system  
+- 🎨 Improved visual design and layout  
 
 ---
 
-## 🧪 .env Setup
+## 🛠 Tech Stack
 
-### Backend (`/backend`)
+**Mobile**
+- React Native  
+- Expo  
+- Expo Router  
 
-Create a `.env` file in the backend directory:
+**Backend**
+- Node.js  
+- Express  
+- PostgreSQL  
 
-```bash
+**API**
+- TheMealDB
+
+---
+
+## 📸 App Screenshots
+
+Screenshots below are taken from the app running on a real device.
+
+![IMG_1](/mobile/assets/images/IMG_1.png)
+![IMG_2](/mobile/assets/images/IMG_2.png)
+![IMG_3](/mobile/assets/images/IMG_3.png)
+![IMG_4](/mobile/assets/images/IMG_4.png)
+![IMG_5](/mobile/assets/images/IMG_5.png)
+![IMG_6](/mobile/assets/images/IMG_6.png)
+![IMG_7](/mobile/assets/images/IMG_7.png)
+![IMG_8](/mobile/assets/images/IMG_8.png)
+![IMG_9](/mobile/assets/images/IMG_9.png)
+![IMG_10](/mobile/assets/images/IMG_10.png)
+![IMG_11](/mobile/assets/images/IMG_11.png)
+![IMG_12](/mobile/assets/images/IMG_12.png)
+![IMG_13](/mobile/assets/images/IMG_13.png)
+![IMG_14](/mobile/assets/images/IMG_14.png)
+![IMG_15](/mobile/assets/images/IMG_15.png)
+
+---
+
+## 🎥 Demo Video
+
+Below is a screen recording of the application running on a physical device using **Expo Go**.
+
+[Watch Demo Video](/videos/ss.mp4)
+
+---
+
+## ⚙️ Environment Variables
+
+### Backend (`/backend/.env`)
+```
 PORT=5001
-DATABASE_URL=your_neon_db_url
+DATABASE_URL=your_database_url
 NODE_ENV=development
 ```
 
-### Mobile App (`/mobile`)
-
-Create a `.env` file in the mobile directory:
-
-```bash
-EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+### Mobile (`/mobile/.env`)
+```
+EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key
 ```
 
 ---
 
-## 📦 Installation & Setup
+## 🚀 Run Locally
 
-### Prerequisites
-
-- Node.js (v18 or higher)
-- npm or yarn
-- Expo CLI
-- PostgreSQL database (Neon recommended)
-- Clerk account for authentication
-
-### Backend Setup
-
+### Backend
 ```bash
 cd backend
 npm install
 npm run dev
 ```
 
-The backend server will start on `http://localhost:5001`
-
-### Mobile App Setup
-
+### Mobile
 ```bash
 cd mobile
 npm install
 npx expo start
 ```
 
-Use the Expo Go app on your phone or an emulator to run the application.
+Scan the QR code using **Expo Go** to run on your phone.
 
 ---
 
-## 🛠️ Tech Stack
+## 👩‍💻 Developer
 
-### Frontend (Mobile)
-- **React Native** - Cross-platform mobile framework
-- **Expo** - Development and build toolchain
-- **Expo Router** - File-based routing
-- **Clerk** - Authentication and user management
-- **Expo Image** - Optimized image loading
-- **React Native WebView** - YouTube video integration
+**Tuğba Gündoğdu**  
+Mobile & Full Stack Developer
 
-### Backend
-- **Express.js** - Node.js web framework
-- **PostgreSQL** - Relational database
-- **Drizzle ORM** - TypeScript ORM
-- **Node Cron** - Scheduled tasks
-
-### APIs
-- **TheMealDB API** - Recipe data source
-
----
-
-## 📸 Features Showcase
-
-### 🔐 Authentication Flow
-- Email-based signup with verification
-- Secure login with Clerk
-- Beautiful custom UI design
-
-### 🍳 Recipe Discovery
-- Browse featured recipes
-- Filter by categories (Beef, Chicken, Dessert, etc.)
-- View detailed recipe information
-- Watch cooking tutorial videos
-
-### 🔍 Smart Search
-- Search by recipe name
-- Search by ingredients
-- Real-time debounced search
-- Clean and intuitive UI
-
-### ❤️ Favorites Management
-- Save favorite recipes
-- Quick access from dedicated tab
-- Personal collection management
-
----
-
-## 🎨 Custom Design System
-
-The app features **Tuğba's Custom Theme** with:
-- Elegant Pink primary color (#D4507E)
-- Soft background colors
-- Smooth transitions and animations
-- Professional typography
-- Consistent spacing and shadows
-
-You can easily switch between 9 different color themes in `constants/colors.js`:
-- Tuğba's Custom Theme ⭐
-- Coffee Theme
-- Forest Theme
-- Purple Theme
-- Ocean Theme
-- Sunset Theme
-- Mint Theme
-- Midnight Theme
-- Rose Gold Theme
-
----
-
-## 📱 Screenshots
-
-> Add your app screenshots here
-
----
-
-## 🚀 Deployment
-
-### Mobile App
-Build for production using EAS Build:
-```bash
-cd mobile
-eas build --platform android
-eas build --platform ios
-```
-
-### Backend
-Deploy to services like:
-- Railway
-- Render
-- Heroku
-- Digital Ocean
-
----
-
-## 📝 Project Structure
-
-```
-react-native-recipe-app/
-├── mobile/
-│   ├── app/                 # Expo Router screens
-│   │   ├── (auth)/         # Authentication screens
-│   │   ├── (tabs)/         # Tab navigation screens
-│   │   └── recipe/         # Recipe detail screen
-│   ├── components/         # Reusable components
-│   ├── constants/          # Colors, API configs
-│   ├── services/           # API services
-│   ├── hooks/              # Custom hooks
-│   └── assets/             # Images, fonts, styles
-├── backend/
-│   ├── src/
-│   │   ├── config/         # Database & cron config
-│   │   ├── db/             # Database schema & migrations
-│   │   └── server.js       # Express server
-│   └── package.json
-└── README.md
-```
-
----
-
-## 🤝 Contributing
-
-This is a portfolio project, but suggestions and feedback are welcome!
-
----
-
-## 📄 License
-
-This project is open source and available under the MIT License.
-
----
-
-## 👩‍💻 Connect with Tuğba Gündoğdu
-
-- **Portfolio**: [Your Portfolio URL]
-- **LinkedIn**: [Your LinkedIn]
-- **GitHub**: [Your GitHub]
-- **Email**: [Your Email]
+This project is part of my portfolio to showcase real-world mobile app development and UI improvement skills.
 
 ---
 
 <p align="center">
   Made with ❤️ by Tuğba Gündoğdu
-</p>
-
-<p align="center">
-  ⭐ Star this repository if you find it helpful!
 </p>
