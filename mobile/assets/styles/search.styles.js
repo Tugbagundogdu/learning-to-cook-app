@@ -6,9 +6,27 @@ export const searchStyles = StyleSheet.create({
     flex: 1,
     backgroundColor: COLORS.background,
   },
+  headerSection: {
+    paddingHorizontal: 20,
+    paddingTop: 20,
+    paddingBottom: 12,
+  },
+  headerTitle: {
+    fontSize: 28,
+    fontWeight: "800",
+    color: COLORS.primary,
+    letterSpacing: -0.5,
+  },
+  headerSubtitle: {
+    fontSize: 14,
+    fontWeight: "500",
+    color: COLORS.textLight,
+    marginTop: 4,
+    fontStyle: "italic",
+  },
   searchSection: {
     paddingHorizontal: 16,
-    paddingTop: 16,
+    paddingTop: 8,
   },
   searchContainer: {
     flexDirection: "row",

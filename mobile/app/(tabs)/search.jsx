@@ -76,10 +76,15 @@ const SearchScreen = () => {
     handleSearch();
   }, [debouncedSearchQuery, initialLoading]);
 
-  if (initialLoading) return <LoadingSpinner message="Loading recipes..." />;
+  if (initialLoading) return <LoadingSpinner message="Preparing Tuğba's recipe collection..." />;
 
   return (
     <View style={searchStyles.container}>
+      <View style={searchStyles.headerSection}>
+        <Text style={searchStyles.headerTitle}>Search Recipes</Text>
+        <Text style={searchStyles.headerSubtitle}>Discover from Tuğba's Collection</Text>
+      </View>
+      
       <View style={searchStyles.searchSection}>
         <View style={searchStyles.searchContainer}>
           <Ionicons

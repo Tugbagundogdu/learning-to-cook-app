@@ -12,8 +12,8 @@ import { useRouter } from "expo-router";
 import { useSignUp } from "@clerk/clerk-expo";
 import { useState } from "react";
 import { authStyles } from "../../assets/styles/auth.styles";
-import { Image } from "expo-image";
 import { COLORS } from "../../constants/colors";
+import { LinearGradient } from "expo-linear-gradient";
 
 import { Ionicons } from "@expo/vector-icons";
 import VerifyEmail from "./verify-email";
@@ -63,16 +63,20 @@ const SignUpScreen = () => {
           contentContainerStyle={authStyles.scrollContent}
           showsVerticalScrollIndicator={false}
         >
-          {/* Image Container */}
-          <View style={authStyles.imageContainer}>
-            <Image
-              source={require("../../assets/images/i2.png")}
-              style={authStyles.image}
-              contentFit="contain"
-            />
+          {/* Modern Icon Header */}
+          <View style={authStyles.iconContainer}>
+            <LinearGradient
+              colors={[COLORS.primary, COLORS.primary + "CC"]}
+              style={authStyles.gradientIcon}
+            >
+              <Ionicons name="person-add" size={80} color={COLORS.white} />
+            </LinearGradient>
+            <View style={authStyles.decorativeCircle1} />
+            <View style={authStyles.decorativeCircle2} />
           </View>
 
           <Text style={authStyles.title}>Create Account</Text>
+          <Text style={authStyles.subtitle}>Join Tuğba's Recipe Collection</Text>
 
           <View style={authStyles.formContainer}>
             {/* Email Input */}

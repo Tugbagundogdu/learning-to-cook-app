@@ -8,6 +8,7 @@ import { Ionicons } from "@expo/vector-icons";
 import RecipeCard from "../../components/RecipeCard";
 import NoFavoritesFound from "../../components/NoFavoritesFound";
 import LoadingSpinner from "../../components/LoadingSpinner";
+import AppFooter from "../../components/AppFooter";
 
 const FavoritesScreen = () => {
   const { signOut } = useClerk();
@@ -17,9 +18,19 @@ const FavoritesScreen = () => {
 
   useEffect(() => {
     const loadFavorites = async () => {
+      if (!user?.id) {
+        setLoading(false);
+        return;
+      }
+
       try {
         const response = await fetch(`${API_URL}/favorites/${user.id}`);
-        if (!response.ok) throw new Error("Failed to fetch favorites");
+        
+        if (!response.ok) {
+          console.error("Failed to fetch favorites:", response.status);
+          setFavoriteRecipes([]);
+          return;
+        }
 
         const favorites = await response.json();
 
@@ -31,15 +42,19 @@ const FavoritesScreen = () => {
 
         setFavoriteRecipes(transformedFavorites);
       } catch (error) {
-        console.log("Error loading favorites", error);
-        Alert.alert("Error", "Failed to load favorites");
+        console.log("Error loading favorites:", error);
+        setFavoriteRecipes([]);
+        // Don't show alert for network errors when backend is offline
+        if (error.message !== "Network request failed") {
+          Alert.alert("Error", "Failed to load favorites. Make sure the backend is running.");
+        }
       } finally {
         setLoading(false);
       }
     };
 
     loadFavorites();
-  }, [user.id]);
+  }, [user?.id]);
 
   const handleSignOut = () => {
     Alert.alert("Logout", "Are you sure you want to logout?", [
@@ -48,13 +63,16 @@ const FavoritesScreen = () => {
     ]);
   };
 
-  if (loading) return <LoadingSpinner message="Loading your favorites..." />;
+  if (loading) return <LoadingSpinner message="Loading your favorite recipes..." />;
 
   return (
     <View style={favoritesStyles.container}>
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={favoritesStyles.header}>
-          <Text style={favoritesStyles.title}>Favorites</Text>
+          <View>
+            <Text style={favoritesStyles.title}>My Favorites</Text>
+            <Text style={favoritesStyles.subtitle}>Tuğba's Collection</Text>
+          </View>
           <TouchableOpacity style={favoritesStyles.logoutButton} onPress={handleSignOut}>
             <Ionicons name="log-out-outline" size={22} color={COLORS.text} />
           </TouchableOpacity>
@@ -72,6 +90,8 @@ const FavoritesScreen = () => {
             ListEmptyComponent={<NoFavoritesFound />}
           />
         </View>
+
+        <AppFooter />
       </ScrollView>
     </View>
   );

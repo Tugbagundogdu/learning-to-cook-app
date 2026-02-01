@@ -14,10 +14,17 @@ export const favoritesStyles = StyleSheet.create({
     paddingVertical: 16,
   },
   title: {
-    fontSize: 32,
+    fontSize: 28,
     fontWeight: "800",
-    color: COLORS.text,
+    color: COLORS.primary,
     letterSpacing: -0.5,
+  },
+  subtitle: {
+    fontSize: 14,
+    fontWeight: "500",
+    color: COLORS.textLight,
+    marginTop: 2,
+    fontStyle: "italic",
   },
   logoutButton: {
     width: 40,

@@ -86,6 +86,18 @@ const roseGoldTheme = {
   shadow: "#000000",
 };
 
+// Tuğba's Custom Theme - Elegant & Modern
+const tugbaTheme = {
+  primary: "#D4507E", // Elegant Pink
+  background: "#FFF9FB",
+  text: "#2C1F29",
+  border: "#F5E3E9",
+  white: "#FFFFFF",
+  textLight: "#B88FA0",
+  card: "#FFFFFF",
+  shadow: "#000000",
+};
+
 export const THEMES = {
   coffee: coffeeTheme,
   forest: forestTheme,
@@ -95,7 +107,8 @@ export const THEMES = {
   mint: mintTheme,
   midnight: midnightTheme,
   roseGold: roseGoldTheme,
+  tugba: tugbaTheme,
 };
 
-// 👇 change this to switch theme
-export const COLORS = THEMES.purple;
+// 👇 Tuğba Gündoğdu's Custom Theme
+export const COLORS = THEMES.tugba;

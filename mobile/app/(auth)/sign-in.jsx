@@ -12,8 +12,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-
-import { Image } from "expo-image";
+import { LinearGradient } from "expo-linear-gradient";
 
 import { authStyles } from "../../assets/styles/auth.styles";
 import { COLORS } from "../../constants/colors";
@@ -69,15 +68,20 @@ const SignInScreen = () => {
           contentContainerStyle={authStyles.scrollContent}
           showsVerticalScrollIndicator={false}
         >
-          <View style={authStyles.imageContainer}>
-            <Image
-              source={require("../../assets/images/i1.png")}
-              style={authStyles.image}
-              contentFit="contain"
-            />
+          {/* Modern Icon Header */}
+          <View style={authStyles.iconContainer}>
+            <LinearGradient
+              colors={[COLORS.primary, COLORS.primary + "CC"]}
+              style={authStyles.gradientIcon}
+            >
+              <Ionicons name="restaurant" size={80} color={COLORS.white} />
+            </LinearGradient>
+            <View style={authStyles.decorativeCircle1} />
+            <View style={authStyles.decorativeCircle2} />
           </View>
 
           <Text style={authStyles.title}>Welcome Back</Text>
+          <Text style={authStyles.subtitle}>Sign in to Tuğba's Recipe App</Text>
 
           {/* FORM CONTAINER */}
           <View style={authStyles.formContainer}>

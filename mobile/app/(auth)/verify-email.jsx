@@ -11,8 +11,10 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { authStyles } from "../../assets/styles/auth.styles";
-import { Image } from "expo-image";
 import { COLORS } from "../../constants/colors";
+import { LinearGradient } from "expo-linear-gradient";
+import { Ionicons } from "@expo/vector-icons";
+
 const VerifyEmail = ({ email, onBack }) => {
   const { isLoaded, signUp, setActive } = useSignUp();
   const [code, setCode] = useState("");
@@ -50,13 +52,16 @@ const VerifyEmail = ({ email, onBack }) => {
           contentContainerStyle={authStyles.scrollContent}
           showsVerticalScrollIndicator={false}
         >
-          {/* Image Container */}
-          <View style={authStyles.imageContainer}>
-            <Image
-              source={require("../../assets/images/i3.png")}
-              style={authStyles.image}
-              contentFit="contain"
-            />
+          {/* Modern Icon Header */}
+          <View style={authStyles.iconContainer}>
+            <LinearGradient
+              colors={[COLORS.primary, COLORS.primary + "CC"]}
+              style={authStyles.gradientIcon}
+            >
+              <Ionicons name="mail-open" size={80} color={COLORS.white} />
+            </LinearGradient>
+            <View style={authStyles.decorativeCircle1} />
+            <View style={authStyles.decorativeCircle2} />
           </View>
 
           {/* Title */}

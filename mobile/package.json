@@ -1,5 +1,8 @@
 {
-  "name": "mobile",
+  "name": "tugba-recipe-app",
+  "displayName": "Tuğba's Recipe App",
+  "description": "A modern recipe discovery app by Tuğba Gündoğdu",
+  "author": "Tuğba Gündoğdu",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {

@@ -6,9 +6,11 @@ import { homeStyles } from "../../assets/styles/home.styles";
 import { Image } from "expo-image";
 import { COLORS } from "../../constants/colors";
 import { Ionicons } from "@expo/vector-icons";
+import { LinearGradient } from "expo-linear-gradient";
 import CategoryFilter from "../../components/CategoryFilter";
 import RecipeCard from "../../components/RecipeCard";
 import LoadingSpinner from "../../components/LoadingSpinner";
+import AppFooter from "../../components/AppFooter";
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -86,7 +88,7 @@ const HomeScreen = () => {
     loadData();
   }, []);
 
-  if (loading && !refreshing) return <LoadingSpinner message="Loading delicions recipes..." />;
+  if (loading && !refreshing) return <LoadingSpinner message="Tuğba's delicious recipes loading..." />;
 
   return (
     <View style={homeStyles.container}>
@@ -101,29 +103,46 @@ const HomeScreen = () => {
         }
         contentContainerStyle={homeStyles.scrollContent}
       >
-        {/*  ANIMAL ICONS */}
+        {/*  WELCOME SECTION WITH PERSONAL BRANDING */}
         <View style={homeStyles.welcomeSection}>
-          <Image
-            source={require("../../assets/images/lamb.png")}
-            style={{
-              width: 100,
-              height: 100,
-            }}
-          />
-          <Image
-            source={require("../../assets/images/chicken.png")}
-            style={{
-              width: 100,
-              height: 100,
-            }}
-          />
-          <Image
-            source={require("../../assets/images/pork.png")}
-            style={{
-              width: 100,
-              height: 100,
-            }}
-          />
+          <View style={homeStyles.welcomeTextContainer}>
+            <Text style={homeStyles.welcomeTitle}>Welcome to</Text>
+            <Text style={homeStyles.welcomeSubtitle}>Tuğba's Recipe Collection</Text>
+            <Text style={homeStyles.welcomeAuthor}>by Tuğba Gündoğdu</Text>
+          </View>
+          
+          {/* Modern Icon Cards */}
+          <View style={homeStyles.iconCardsRow}>
+            <View style={homeStyles.iconCard}>
+              <LinearGradient
+                colors={[COLORS.primary, COLORS.primary + "CC"]}
+                style={homeStyles.iconGradient}
+              >
+                <Ionicons name="restaurant" size={32} color={COLORS.white} />
+              </LinearGradient>
+              <Text style={homeStyles.iconLabel}>Recipes</Text>
+            </View>
+            
+            <View style={homeStyles.iconCard}>
+              <LinearGradient
+                colors={["#FF6B6B", "#FF8E53"]}
+                style={homeStyles.iconGradient}
+              >
+                <Ionicons name="fast-food" size={32} color={COLORS.white} />
+              </LinearGradient>
+              <Text style={homeStyles.iconLabel}>Delicious</Text>
+            </View>
+            
+            <View style={homeStyles.iconCard}>
+              <LinearGradient
+                colors={["#4ECDC4", "#44A08D"]}
+                style={homeStyles.iconGradient}
+              >
+                <Ionicons name="heart" size={32} color={COLORS.white} />
+              </LinearGradient>
+              <Text style={homeStyles.iconLabel}>Favorites</Text>
+            </View>
+          </View>
         </View>
 
         {/* FEATURED SECTION */}
@@ -206,6 +225,8 @@ const HomeScreen = () => {
             </View>
           )}
         </View>
+
+        <AppFooter />
       </ScrollView>
     </View>
   );

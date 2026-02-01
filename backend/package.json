@@ -1,16 +1,19 @@
 {
-  "name": "backend",
+  "name": "tugba-recipe-app-backend",
   "version": "1.0.0",
+  "description": "Backend API for Tuğba's Recipe App - A modern recipe discovery application",
+  "author": "Tuğba Gündoğdu",
+  "license": "MIT",
   "main": "src/server.js",
   "scripts": {
     "dev": "nodemon src/server.js",
     "start": "node src/server.js"
   },
-  "keywords": [],
+  "keywords": ["recipe", "api", "express", "postgresql", "drizzle-orm", "tugba-gundogdu"],
   "type": "module",
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "author": "Tuğba Gündoğdu",
+  "license": "MIT",
+  "description": "Backend API for Tuğba's Recipe App - A modern recipe discovery application",
   "dependencies": {
     "@neondatabase/serverless": "^1.0.0",
     "cors": "^2.8.5",
