@@ -76,11 +76,18 @@ Screenshots below are taken from the app running on a real device.
 
 ---
 
-## 🎥 Demo Video
+## 🎥 App Demo Video
 
-Below is a screen recording of the application running on a physical device using **Expo Go**.
+<p align="center">
+  <a href="https://youtube.com/shorts/CJpgoiju6hA?si=KZ_ZkWfXrlgE3-je" target="_blank">
+    <img src="https://img.youtube.com/vi/CJpgoiju6hA/maxresdefault.jpg" width="70%" alt="Watch Demo Video"/>
+  </a>
+</p>
 
-[Watch Demo Video](/videos/ss.mp4)
+<p align="center">
+  ▶️ Click the image above to watch the full app demo on YouTube
+</p>
+
 
 ---
 
@@ -123,7 +130,7 @@ Scan the QR code using **Expo Go** to run on your phone.
 ## 👩‍💻 Developer
 
 **Tuğba Gündoğdu**  
-Mobile & Full Stack Developer
+Mobile Developer
 
 This project is part of my portfolio to showcase real-world mobile app development and UI improvement skills.
 
