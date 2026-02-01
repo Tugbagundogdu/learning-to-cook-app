@@ -1,50 +1,129 @@
-# Welcome to your Expo app 👋
+<h1 align="center">🍽️ Tuğba's Recipe App 🍽️</h1>
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<p align="center">
+  <strong>Modern Recipe Discovery Mobile Application</strong><br>
+  <em>Customized & Improved by Tuğba Gündoğdu</em>
+</p>
 
-## Get started
+---
 
-1. Install dependencies
+## 📱 About This Project
 
-   ```bash
-   npm install
-   ```
+This project is based on an open-source recipe application and was **customized and improved** as part of my mobile development portfolio.
 
-2. Start the app
+My focus was on:
+- Improving the **UI/UX**
+- Making the app feel more **modern and clean**
+- Enhancing the **overall mobile user experience**
 
-   ```bash
-   npx expo start
-   ```
+The app allows users to discover recipes, view details, and interact with a smooth, mobile-first interface.
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## ✨ Main Features
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- 🔐 User authentication flow  
+- 🍳 Browse and discover recipes  
+- 🔍 Search functionality  
+- 📄 Detailed recipe pages  
+- ❤️ Favorites system  
+- 🎨 Improved visual design and layout  
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 🛠 Tech Stack
 
-```bash
-npm run reset-project
+### Mobile App
+- React Native  
+- Expo  
+- Expo Router  
+- Clerk Authentication  
+
+### Backend
+- Node.js  
+- Express  
+- PostgreSQL  
+
+### API
+- TheMealDB (Recipe data)
+
+---
+
+## 📸 App Screenshots
+
+Screenshots below are taken from the app running on a real device.
+
+![IMG_1](IMG_1.png)
+![IMG_2](IMG_2.png)
+![IMG_3](IMG_3.png)
+![IMG_4](IMG_4.png)
+![IMG_5](IMG_5.png)
+![IMG_6](IMG_6.png)
+![IMG_7](IMG_7.png)
+![IMG_8](IMG_8.png)
+![IMG_9](IMG_9.png)
+![IMG_10](IMG_10.png)
+![IMG_11](IMG_11.png)
+![IMG_12](IMG_12.png)
+![IMG_13](IMG_13.png)
+![IMG_14](IMG_14.png)
+![IMG_15](IMG_15.png)
+
+---
+
+## 🎥 Demo Video
+
+Below is a screen recording of the application running on a physical device using **Expo Go**.
+
+[Watch Demo Video](videos/ss.mp4)
+
+---
+
+## ⚙️ Environment Variables
+
+### Backend (`/backend/.env`)
+```
+PORT=5001
+DATABASE_URL=your_database_url
+NODE_ENV=development
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Mobile (`/mobile/.env`)
+```
+EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key
+```
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+## 🚀 Run Locally
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Backend
+```bash
+cd backend
+npm install
+npm run dev
+```
 
-## Join the community
+### Mobile
+```bash
+cd mobile
+npm install
+npx expo start
+```
 
-Join our community of developers creating universal apps.
+Scan the QR code using **Expo Go** to run on your phone.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+## 👩‍💻 Developer
+
+**Tuğba Gündoğdu**  
+Mobile & Full Stack Developer
+
+This project is part of my portfolio to showcase real-world mobile app development and UI improvement skills.
+
+---
+
+<p align="center">
+  Made with ❤️ by Tuğba Gündoğdu
+</p>
