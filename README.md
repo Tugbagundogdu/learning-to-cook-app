@@ -47,21 +47,32 @@ My focus was on improving the UI/UX, modernizing the design, and creating a smoo
 
 Screenshots below are taken from the app running on a real device.
 
-![IMG_1](/mobile/assets/images/IMG_1.png)
-![IMG_2](/mobile/assets/images/IMG_2.png)
-![IMG_3](/mobile/assets/images/IMG_3.png)
-![IMG_4](/mobile/assets/images/IMG_4.png)
-![IMG_5](/mobile/assets/images/IMG_5.png)
-![IMG_6](/mobile/assets/images/IMG_6.png)
-![IMG_7](/mobile/assets/images/IMG_7.png)
-![IMG_8](/mobile/assets/images/IMG_8.png)
-![IMG_9](/mobile/assets/images/IMG_9.png)
-![IMG_10](/mobile/assets/images/IMG_10.png)
-![IMG_11](/mobile/assets/images/IMG_11.png)
-![IMG_12](/mobile/assets/images/IMG_12.png)
-![IMG_13](/mobile/assets/images/IMG_13.png)
-![IMG_14](/mobile/assets/images/IMG_14.png)
-![IMG_15](/mobile/assets/images/IMG_15.png)
+## 📸 App Screenshots
+
+<p align="center">
+  <img src="/mobile/assets/images/IMG_1.png" width="18%" />
+  <img src="/mobile/assets/images/IMG_2.png" width="18%" />
+  <img src="/mobile/assets/images/IMG_3.png" width="18%" />
+  <img src="/mobile/assets/images/IMG_4.png" width="18%" />
+  <img src="/mobile/assets/images/IMG_5.png" width="18%" />
+</p>
+
+<p align="center">
+  <img src="/mobile/assets/images/IMG_6.png" width="18%" />
+  <img src="/mobile/assets/images/IMG_7.png" width="18%" />
+  <img src="/mobile/assets/images/IMG_8.png" width="18%" />
+  <img src="/mobile/assets/images/IMG_9.png" width="18%" />
+  <img src="/mobile/assets/images/IMG_10.png" width="18%" />
+</p>
+
+<p align="center">
+  <img src="/mobile/assets/images/IMG_11.png" width="18%" />
+  <img src="/mobile/assets/images/IMG_12.png" width="18%" />
+  <img src="/mobile/assets/images/IMG_13.png" width="18%" />
+  <img src="/mobile/assets/images/IMG_14.png" width="18%" />
+  <img src="/mobile/assets/images/IMG_15.png" width="18%" />
+</p>
+
 
 ---
 
