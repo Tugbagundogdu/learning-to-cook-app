@@ -45,33 +45,42 @@ My focus was on improving the UI/UX, modernizing the design, and creating a smoo
 
 ## 📸 App Screenshots
 
-Screenshots below are taken from the app running on a real device.
-
-## 📸 App Screenshots
-
 <p align="center">
-  <img src="/mobile/assets/images/IMG_1.png" width="18%" style="margin:6px;" />
-  <img src="/mobile/assets/images/IMG_2.png" width="18%" style="margin:6px;" />
-  <img src="/mobile/assets/images/IMG_3.png" width="18%" style="margin:6px;" />
-  <img src="/mobile/assets/images/IMG_4.png" width="18%" style="margin:6px;" />
-  <img src="/mobile/assets/images/IMG_5.png" width="18%" style="margin:6px;" />
+  <img src="/mobile/assets/images/IMG_1.png" width="18%" />
+  &nbsp;&nbsp;
+  <img src="/mobile/assets/images/IMG_2.png" width="18%" />
+  &nbsp;&nbsp;
+  <img src="/mobile/assets/images/IMG_3.png" width="18%" />
+  &nbsp;&nbsp;
+  <img src="/mobile/assets/images/IMG_4.png" width="18%" />
+  &nbsp;&nbsp;
+  <img src="/mobile/assets/images/IMG_5.png" width="18%" />
 </p>
 
 <p align="center">
-  <img src="/mobile/assets/images/IMG_6.png" width="18%" style="margin:6px;" />
-  <img src="/mobile/assets/images/IMG_7.png" width="18%" style="margin:6px;" />
-  <img src="/mobile/assets/images/IMG_8.png" width="18%" style="margin:6px;" />
-  <img src="/mobile/assets/images/IMG_9.png" width="18%" style="margin:6px;" />
-  <img src="/mobile/assets/images/IMG_10.png" width="18%" style="margin:6px;" />
+  <img src="/mobile/assets/images/IMG_6.png" width="18%" />
+  &nbsp;&nbsp;
+  <img src="/mobile/assets/images/IMG_7.png" width="18%" />
+  &nbsp;&nbsp;
+  <img src="/mobile/assets/images/IMG_8.png" width="18%" />
+  &nbsp;&nbsp;
+  <img src="/mobile/assets/images/IMG_9.png" width="18%" />
+  &nbsp;&nbsp;
+  <img src="/mobile/assets/images/IMG_10.png" width="18%" />
 </p>
 
 <p align="center">
-  <img src="/mobile/assets/images/IMG_11.png" width="18%" style="margin:6px;" />
-  <img src="/mobile/assets/images/IMG_12.png" width="18%" style="margin:6px;" />
-  <img src="/mobile/assets/images/IMG_13.png" width="18%" style="margin:6px;" />
-  <img src="/mobile/assets/images/IMG_14.png" width="18%" style="margin:6px;" />
-  <img src="/mobile/assets/images/IMG_15.png" width="18%" style="margin:6px;" />
+  <img src="/mobile/assets/images/IMG_11.png" width="18%" />
+  &nbsp;&nbsp;
+  <img src="/mobile/assets/images/IMG_12.png" width="18%" />
+  &nbsp;&nbsp;
+  <img src="/mobile/assets/images/IMG_13.png" width="18%" />
+  &nbsp;&nbsp;
+  <img src="/mobile/assets/images/IMG_14.png" width="18%" />
+  &nbsp;&nbsp;
+  <img src="/mobile/assets/images/IMG_15.png" width="18%" />
 </p>
+
 
 
 
