@@ -1,4 +1,4 @@
-<h1 align="center">🍽️ Tuğba's Learning To Cook App 🍽️</h1>
+<h1 align="center">🍽️ Learning To Cook App 🍽️</h1>
 
 <p align="center">
   <strong>Modern Recipe Discovery Mobile Application</strong><br>
