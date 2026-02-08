@@ -134,18 +134,3 @@ npx expo start
 ```
 
 Scan the QR code using **Expo Go** to run on your phone.
-
----
-
-## 👩‍💻 Developer
-
-**Tuğba Gündoğdu**  
-Mobile Developer
-
-This project is part of my portfolio to showcase real-world mobile app development and UI improvement skills.
-
----
-
-<p align="center">
-  Made with ❤️ by Tuğba Gündoğdu
-</p>
